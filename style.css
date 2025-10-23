@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0a0e14;
+  color: #ddd;
+}
+
+
+.navbar {
+  background-color: #00ff44;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  font-weight: 700;
+}
+
+.logo {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.status {
+  font-size: 0.9rem;
+}
+
+.friends {
+  padding: 20px;
+  background-color: #1b1e24;
+  min-height: 60vh;
+}
+
+.friends h2 {
+  color: #00ff66;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.friends-group {
+  margin-bottom: 20px;
+}
+
+.friends-group h3 {
+  color: #00ff99;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.friends-group ul {
+  list-style: none;
+}
+
+.friends-group li {
+  padding: 5px 0;
+  border-bottom: 1px solid #222;
+}
+
+.friends-group span {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+
+.footer {
+  background-color: #000;
+  padding: 50px 20px;
+  color: #ccc;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.footer-col h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.footer-col h2 span {
+  color: #00ff66;
+}
+
+.footer-col h3 {
+  color: #00ff66;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col li {
+  margin-bottom: 6px;
+}
+
+.footer-col a {
+  text-decoration: none;
+  color: #bbb;
+  transition: color 0.3s ease;
+}
+
+.footer-col a:hover {
+  color: #00ff99;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.socials img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) saturate(100%) invert(67%) sepia(95%) saturate(705%) hue-rotate(90deg) brightness(107%) contrast(101%);
+  transition: transform 0.3s;
+}
+
+.socials img:hover {
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+  .footer-grid {
+    text-align: center;
+  }
+
+  .socials{
+     justify-content:center;
+  }
+   
+    
+}
