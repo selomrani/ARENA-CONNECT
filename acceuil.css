@@ -22,29 +22,33 @@ header{
     top: 0;
     height: 5rem;
     padding-bottom: 50px;
+    position: sticky;
+    background: black;
 }
 nav{
-    display: flex;
-    padding-right: 2rem;
-    justify-content: space-between;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+display: grid;
+grid-template-columns:25% 75%;
+padding: 1rem;
+    
 }
 .nav-links{
-    display: flex;
-    justify-content: space-around;
-    gap: 100px;
+  grid-column: 2;
+  display: grid;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  
 }
 ul{
     display: flex;
     list-style: none;
     gap: 100px;
-    
+    margin-top: 0.75rem;
 }
 .arena-logo{
-     font-family: "BBH Sans Bartle", sans-serif;
+  font-family: "BBH Sans Bartle", sans-serif;
   font-weight: 400;
   font-style: normal;
+margin-left: 1rem;
 }
 .arena-logo span{
     color: #3CFC46;
@@ -57,6 +61,8 @@ ul{
   font-family: "Krona One", sans-serif;
   font-weight: 400;
   font-style: normal;
+  border: none;
+  grid-column: 5;
 }
 .nav-line{
   height: 0.5rem;
@@ -64,6 +70,54 @@ ul{
   background: #3CFC46;
   border: none;
 }
+.hero{
+  background-image: url("assets/hero.jpg");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 40rem;
+  display: grid;
+  grid-template-columns: 5rem 5rem 5rem;
+  grid-template-rows: 5rem 5rem 5rem 5rem 5rem;
+}
+.hero-title{
+  grid-column: 7;
+  grid-row: 3;
+  font-size: 2rem;
+  line-height: 3rem;
+    font-family: "BBH Sans Bartle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.hero-description{
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 6rem;
+  margin-left: 1rem;
+}
+.hero-leanmore-button{
+  width: 186px;
+  height: 47px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: none;
+  background: #105D09;
+   font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  cursor: pointer;
+}
+.hero-title-connect{
+  color: #3CFC46;
+}
+.hero-leanmore-button :hover{
+  background: #3CFC46;
+  box-shadow: 0 0 15px #3CFC46;
+}
+
    /* === FOOTER GRID === */
     footer {
       background-color: #000;
