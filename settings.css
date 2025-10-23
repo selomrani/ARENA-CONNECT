@@ -7,6 +7,39 @@
       padding: 0%;
     }
 
+/* Local font-face declarations */
+@font-face {
+  font-family: 'HighSpeed';
+  src: url('assets/fonts/High Speed.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GoGoPosterPunch';
+  src: url('assets/fonts/GoGoPosterPunch.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ValorantFont';
+  src: url('assets/fonts/Valorant Font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CallOfOpsDuty';
+  src: url('assets/fonts/Call of Ops Duty.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
     a {
       text-decoration: none;
       color: #bfbfbf;
@@ -207,34 +240,60 @@
 }
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: stretch;
-  align-items: center;
-  gap: 1em;
+  grid-template-columns: repeat(2, 594px);
+  grid-template-rows: repeat(2, auto);
+  max-width: 1328px;
+  gap: 60px;
+  margin: 30px auto;
+  padding: 0 20px;
+  justify-content: center;
 }
 .grid-item {
-  width: 570px;
-  height:321px;
-  background-color: #0A0E27;
-  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
 }
-.grid-item img {
-  width: 100%;
-  height: 100%;
+.game-box {
+  width: 594px;
+  height: 321px;
+  box-sizing: border-box;
+  background: rgba(217, 217, 217, 0.2);
+  border: 5px solid #0B6B10;
+  border-bottom: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.game-box img {
+  width: calc(100% - 24px);
+  height: calc(100% - 24px);
+  margin: 12px;
   object-fit: cover;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1328px) {
   .grid-container {
-    grid-template-columns: 1fr;
-  }
-  .grid-item {
-    width: 100%;
-    height: auto;
+    grid-template-columns: repeat(2, minmax(auto, 594px));
+    gap: 40px;
   }
 }
-@media (max-width: 480px) {
-  .grid-item {
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
+  }
+  .game-box {
+    width: 100%;
     height: auto;
+    aspect-ratio: 594/321;
+  }
+  .game-box img {
+    width: calc(100% - 24px);
+    height: auto;
+    aspect-ratio: 570/321;
+  }
+  .cs2title, .rocketleaguetitle, .callofdutytitle, .valoranttitle {
+    width: 100%;
+    font-size: 32px;
+    line-height: 40px;
+    height: 70px;
   }
 }
 @media (max-width: 480px) {
@@ -268,4 +327,85 @@
       height: 2px;
     }
   }
-
+  .cs2title, .rocketleaguetitle, .callofdutytitle, .valoranttitle {
+    height: 90px;
+    background: rgba(217, 217, 217, 0.2);
+    border: 5px solid #0B6B10;
+    border-top: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: -5px;
+  }
+  
+  .cs2title {
+    font-family: 'HighSpeed', sans-serif;
+    font-size: 35px;
+    line-height: 53px;
+  }
+  
+  .rocketleaguetitle {
+    font-family: 'GoGoPosterPunch', sans-serif;
+    font-size: 43px;
+    line-height: 53px;
+  }
+  
+  .callofdutytitle {
+    font-family: 'CallOfOpsDuty', sans-serif;
+    font-size: 43px;
+    line-height: 53px;
+  }
+  
+  .valoranttitle {
+    font-family: 'ValorantFont', sans-serif;
+    font-size: 43px;
+    line-height: 47px;
+  }
+  @media (max-width: 480px) {
+  .cs2title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .pfp img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: auto;
+  }
+}
+.edit-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+input[type="text"], input[type="email"], input[type="password"] , input[type="Phone"]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Krona One", sans-serif;
+}
+label {
+    font-family: "Krona One", sans-serif;
+    font-size: 16px;
+}
+.btn-save {
+    width: 150px;
+    height: 40px;
+    background-color: #00AA00;
+    border: none;
+    border-radius: 120px;
+    font-family: "Krona One", sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 10px;
+}
+button.save-btn:hover {
+    cursor: pointer;
+    background-color: #3bd97a;
+}
