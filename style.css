@@ -1,6 +1,66 @@
 
 body {
     background-color: rgb(17, 36, 17);
+    
+    /* === FOOTER GRID === */
+    footer {
+      background-color: #000;
+      padding: 60px 10%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+      border-top: 1px solid #111;
+    }
+
+    /* === BRAND COLUMN === */
+    .footer-brand h2 {
+      color: #fff;
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+    }
+
+    .footer-brand span {
+      color: #00ff66;
+      font-weight: bold;
+    }
+
+    .footer-social {
+      margin-top: 25px;
+    }
+
+    .footer-social p {
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .social-icons {
+      display: grid;
+      grid-template-columns: repeat(4, 40px);
+      gap: 10px;
+    }
+
+    .social-icons a {
+      background-color: #0a0e27;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      background-color: #00ff66;
+      transform: scale(1.1);
+    }
+
+    .social-icons img {
+      width: 20px;
+      height: 20px;
+      filter: invert(100%);
+    }
+
 }
 .krona-one-regular {
   font-family: "Krona One", sans-serif;
