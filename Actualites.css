@@ -106,6 +106,7 @@ background: #042F06;
 display: flex;
 flex-direction: Arow;
 justify-content: space-around;
+
 }
 .section-Actualites-img-1{
 background-image: url(img/Actualites9.png);
