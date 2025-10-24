@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arena Connect - Chat</title>
+  <title>Arena Connect - Groupes</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Krona+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
+
   <header>
     <nav>
       <div class="arena-logo">ARENA <br><span class="connect-logo">CONNECT</span></div>
@@ -28,45 +28,35 @@
   </header>
   <hr class="nav-line">
 
-  <!-- Contenu principal du chat -->
-  <main class="chat">
-    <div class="chat__container">
-      <!-- Section des messages -->
-      <div class="chat__messages">
-        <div class="chat__message">
-          <img src="https://source.unsplash.com/40x40/?gamer,avatar" alt="Avatar" class="chat__avatar">
-          <div class="chat__content">
-            <span class="chat__username">progamer99</span>
-            <p class="chat__text">Salut !</p>
-          </div>
-        </div>
-
-        <div class="chat__message">
-          <img src="https://source.unsplash.com/40x40/?gamer,avatar" alt="Avatar" class="chat__avatar">
-          <div class="chat__content">
-            <span class="chat__username">cyberninja</span>
-            <p class="chat__text">Tu veux jouer ce soir ?</p>
-          </div>
-        </div>
-
-        <div class="chat__message">
-          <img src="https://source.unsplash.com/40x40/?gamer,avatar" alt="Avatar" class="chat__avatar">
-          <div class="chat__content">
-            <span class="chat__username">progamer99</span>
-            <p class="chat__text">Oui, je suis dispo à 21h.</p>
-          </div>
-        </div>
+ 
+  <main class="groupes">
+    <h1 class="groupes__title">Groupes de Gaming</h1>
+    
+    <div class="groupes__grid">
+     
+      <div class="groupes__card">
+        <img src="https://source.unsplash.com/200x200/?gaming,team,esport" alt="Team Phoenix Logo" class="groupes__logo">
+        <h3 class="groupes__name">Team Phoenix</h3>
+        <p class="groupes__game">Valorant</p>
       </div>
-    </div>
 
-    <!-- Barre de saisie -->
-    <div class="chat__input">
-      <input type="text" placeholder="Tapez votre message..." class="chat__field">
-      <button class="chat__send">Envoyer</button>
+      
+      <div class="groupes__card">
+        <img src="https://source.unsplash.com/200x200/?gaming,team,esport" alt="Cyber Titans Logo" class="groupes__logo">
+        <h3 class="groupes__name">Cyber Titans</h3>
+        <p class="groupes__game">CS2</p>
+      </div>
+
+      
+      <div class="groupes__card">
+        <img src="https://source.unsplash.com/200x200/?gaming,team,esport" alt="Night Blades Logo" class="groupes__logo">
+        <h3 class="groupes__name">Night Blades</h3>
+        <p class="groupes__game">Apex Legends</p>
+      </div>
     </div>
   </main>
 
-  <!-- Footer -->
+
   <footer>
     <div class="footer-grid">
       <div class="footer-brand">
@@ -114,6 +104,6 @@
     </div>
   </footer>
   
-
+ 
 </body>
 </html>
