@@ -100,19 +100,27 @@ line-height: 30px;
 color: #FFFFFF;
 }
 .section-Actualites{
-width:auto;
-height: 1763px;
+
+
 background: #042F06;
 display: flex;
-flex-direction: Arow;
-justify-content: space-around;
+padding: 200px;
+
+
+
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    margin: px;
 }
 .section-Actualites-img-1{
 background-image: url(assets/act/Actualites9.png);
-margin: 100px;
-width: 1000px;
+
+width: 100%;
 height: 420px;
-border-radius: 50px;
 display: flex;
 justify-content: start;
 align-items: end;
@@ -122,25 +130,11 @@ font-weight: 400;
 font-size: 36px;
 line-height: 39px;
 color: #FFFFFF;
-padding: 20px;
 
 }
 .section-Actualites-img-2{
 background-image: url(assets/act/Actualites10.png);
-margin: 100px;
-width: 1000px;
-height: 420px;
-border-radius: 50px;
-display: flex;
-justify-content: start;
-align-items: end;
-font-family: 'Krona One';  
-font-style: normal;
-font-weight: 400;
-font-size: 36px;
-line-height: 39px;
-color: #FFFFFF;
-padding: 20px;
+
 }
 .section-Actualites-button-1{
 
@@ -173,4 +167,20 @@ padding: 20px;
         border: none;
         cursor: pointer;
     }
+}
+.section-Actualites-div{
+    
+}
+.section-Actualites-div-button{
+    
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: red;
+    height: auto;
+    width: 1000px;
+    overflow: hidden;
+
 }
