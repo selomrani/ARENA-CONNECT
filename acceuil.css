@@ -24,7 +24,7 @@ header {
   height: 5rem;
   padding-bottom: 50px;
   position: sticky;
-  background: black;
+  background: rgba(0, 0, 0, 0.619);
 }
 button{
   font-family: "Krona One", sans-serif;
@@ -38,6 +38,7 @@ nav {
   display: grid;
   grid-template-columns: 25% 75%;
   padding: 1rem;
+  backdrop-filter: blur(15px);
 
 }
 
@@ -49,7 +50,7 @@ nav {
 
 }
 
-ul {
+.nav-links ul{
   display: flex;
   list-style: none;
   gap: 100px;
@@ -153,7 +154,12 @@ ul {
   padding: 2rem;
 }
 .acceuil-title{
-  margin-left: 2rem;
+  margin-left: 3rem;
+  font-size: 1rem;
+  text-decoration: underline;
+  text-decoration-color: #3CFC46;
+  text-underline-offset: 20px;
+  text-decoration-thickness: 5px;
 }
 .website-intro-cards{
   display: grid;
@@ -172,7 +178,7 @@ ul {
   grid-column: 1;
   width: 308px;
   height: 476px;
-  background: linear-gradient(180deg, #000, #3CFC46);
+  background: linear-gradient(180deg, #000 , #2D6530 , #3CFC46 );
   font-size: 40px;
   text-align: center;
   border-radius: 40px;
@@ -181,7 +187,7 @@ ul {
   grid-column: 2;
   width: 308px;
   height: 476px;
-  background: linear-gradient(180deg, #000, #3CFC46);
+  background: linear-gradient(180deg, #000 0%, #2D6530, #3CFC46);
   font-size: 40px;
   text-align: center;
   border-radius: 40px;
@@ -191,7 +197,7 @@ ul {
   grid-column: 3;
   width: 308px;
   height: 476px;
-  background: linear-gradient(180deg, #000, #3CFC46);
+  background: linear-gradient(180deg, #000 0%, #2D6530, #3CFC46);
   font-size: 30px;
   text-align: center;
   border-radius: 40px;
@@ -200,7 +206,7 @@ ul {
   grid-column: 4;
   width: 308px;
   height: 476px;
-  background: linear-gradient(180deg, #000, #3CFC46);
+  background: linear-gradient(180deg, #000 0%, #2D6530, #3CFC46);
   font-size: 40px;
   text-align: center;
   border-radius: 40px; 
@@ -227,7 +233,7 @@ ul {
 .newscards-acceuil{
   display: grid;
   grid-template-columns: repeat(3 1fr);
-  gap: 6rem;
+  gap: 10rem;
   margin-top: 3rem;
   justify-content: center;
 
@@ -246,7 +252,7 @@ ul {
   grid-column: 1;
   width: 308px;
   height: 476px;
-  background: linear-gradient(180deg, #000, #3CFC46);
+  background: linear-gradient(180deg, #000 0%, #2D6530, #3CFC46);
   font-size: 33px;
   text-align: center;
   border-radius: 40px;
@@ -255,7 +261,7 @@ ul {
   grid-column: 2;
   width: 308px;
   height: 476px;
-  background: linear-gradient(180deg, #000, #3CFC46);
+  background: linear-gradient(180deg, #000 0%, #2D6530, #3CFC46);
   font-size: 35px;
   text-align: center;
   border-radius: 40px;
@@ -264,12 +270,25 @@ ul {
   grid-column: 3;
   width: 308px;
   height: 476px;
-  background: linear-gradient(180deg, #000, #3CFC46);
+  background: linear-gradient(180deg, #000 0%, #2D6530, #3CFC46);
   font-size: 35px;
   text-align: center;
   border-radius: 40px;
 
 }
+.seemore-buuton-acceuil{
+  width: 200px;
+  height: 45px;
+  background: #3CFC46;
+  color: black;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  font-size: 20px;
+  margin-left: 41rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  cursor: pointer;
+  }
 
 
 /* === FOOTER GRID === */
