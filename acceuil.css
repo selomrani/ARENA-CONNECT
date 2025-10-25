@@ -289,6 +289,87 @@ nav {
   margin-bottom: 5rem;
   cursor: pointer;
   }
+  /* login */
+  .body-login{
+    background-image: url("assets/acceuil/login.jpg");
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+  }
+  .login-title{
+  font-family: "BBH Sans Bartle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 3rem;
+  color: #3CFC46;
+  text-shadow: 0 0 20px #000;
+  margin-bottom: 2rem;
+  grid-row: 1;
+  
+  }
+  .login-input{
+    width: 30%;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    height: 30rem;
+    padding: 2rem ;
+    line-height: 4rem;
+    grid-row: 2;
+    background: #105d0920;
+    backdrop-filter: blur(50px);
+    border-radius: 50px;
+   
+  }
+  .input-login1{
+    display: grid;
+    grid-column: 2;
+  }
+  .input-login2{
+    grid-row: 4;
+    grid-column: 2;
+    display: grid;
+
+  }
+  label{
+    text-align: center;
+  }
+  input{
+    width: 18rem;
+    justify-self: center;
+    padding-left: 10px;
+    height: 3rem;
+    border-radius: 50px;
+    margin-top: 5px;
+    border: none;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+  }
+  .mdpoublie{
+      grid-row: 5;
+      text-align: right ;
+      font-size: 14px;
+      grid-column: 2; 
+  }
+  .button-connection-login{
+    width: 10rem;
+    height: 3rem;
+    background: #00ff66;
+    grid-row: 8;
+    grid-column: 2;
+    margin-left: 4rem;  
+    border-radius: 30px;
+    box-shadow: 0 0 10px #3CFC46;
+    border: none;  
+  }
+
+
+  
 
 
 /* === FOOTER GRID === */
