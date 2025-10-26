@@ -1,543 +1,355 @@
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+   margin:0;
+    padding:0; 
+    box-sizing:border-box;
+  }
+
+:root{
+  --noir:#000000;
+  --vert:#3CFC46;
+  --vert-fonce:#00AA00;
+  --gris:#111111;
+  --texte:#ffffff;
+  --gris-clair:#d3d3d3;
 }
-
-body {
-  background: #000000;
-  color: #FFFFFF;
-  font-family: "BBH Sans Bartle", sans-serif;
-  font-weight: 400;
-  line-height: 1.6;
-}
-
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Krona One", sans-serif;
-  font-weight: 400;
-}
-
-button {
+.bbh-sans-bartle-regular {
   font-family: "BBH Sans Bartle", sans-serif;
   font-weight: 200;
+  font-style: normal;
 }
-
-
-header {
-  padding-bottom: 50px;
-}
-
-nav {
-  display: grid;
-  grid-template-columns: 25% 75%;
-  padding: 1rem 2rem;
-  align-items: center;
-}
-
-.arena-logo {
-  font-size: 1.5rem;
-  line-height: 1.2;
+.krona-one-regular {
   font-family: "Krona One", sans-serif;
-  font-weight: 300;
+  font-weight: 200;
+  font-style: normal;
+}
+body{
+  background:var(--noir);
+  color:var(--texte);
+  font-family:"BBH Sans Bartle",sans-serif;
+  font-size: small;
 }
 
-.connect-logo {
-  color: #3CFC46;
-}
-
-.nav-links {
-  display: grid;
-  grid-template-columns: 1fr auto auto;
-  align-items: center;
-  gap: 2rem;
-}
-
-.nav-links ul {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  gap: 100px;
-}
-
-.nav-links li a {
-  color: #FFFFFF;
-  text-decoration: none;
-  font-family: "BBH Sans Bartle", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-}
-
-.nav-connection {
-  width: 8rem;
-  height: 3rem;
-  border-radius: 50px;
-  background: #3CFC46;
-  border: none;
-  color: #000000;
-  cursor: pointer;
-  font-family: "BBH Sans Bartle", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-}
-
-.nav-connection a {
-  color: #000000;
-  text-decoration: none;
-}
-
-.nav-burger {
-  display: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: #FFFFFF;
-}
-
-.nav-line {
-  height: 0.5rem;
-  background: #3CFC46;
-  border: none;
-}
+.titre-principal{
+   font-family:"Krona One",sans-serif;
+   font-size: small;
+   
+   }
 
 
-.accueil {
-  padding: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.accueil__title {
-  font-size: 1.9rem;
-  margin-bottom: 1rem;
-  color: #3CFC46;
-  font-family: "Krona One", sans-serif;
-  font-weight: 400;
-}
-
-.accueil__subtitle {
-  font-size: 1.1rem;
-  margin-bottom: 3rem;
-  color: #FFFFFF;
-  font-family: "BBH Sans Bartle", sans-serif;
-  font-weight: 400;
-}
-
-.accueil__features {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
-.accueil__feature {
-  background: #0A0A0A;
-  border: 1px solid #3CFC46;
-  border-radius: 10px;
-  padding: 1.5rem;
-  text-align: center;
-}
-
-.accueil__feature h3 {
-  color: #3CFC46;
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
-  font-family: "Krona One", sans-serif;
-  font-weight: 400;
-}
-
-.accueil__feature p {
-  color: #FFFFFF;
-  font-family: "BBH Sans Bartle", sans-serif;
-  font-weight: 400;
-  line-height: 1.6;
-  font-size: 1rem;
-}
-
-/* Styles pour lae page groupes */
-.groupes {
-  padding: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.groupes__title {
-  font-size: 1.9rem;
-  text-align: center;
-  margin-bottom: 3rem;
-  color: #3CFC46;
-  font-family: "Krona One", sans-serif;
-  font-weight: 400;
-}
-
-.groupes__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-bottom: 4rem;
-}
-
-.groupes__card {
-  background: #0A0A0A;
-  border: 1px solid #3CFC46;
-  border-radius: 10px;
-  padding: 1.5rem;
-  text-align: center;
-}
-
-.groupes__logo {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin: 0 auto 1rem;
-  display: block;
-  object-fit: cover;
-  border: 2px solid #3CFC46;
-}
-
-.groupes__name {
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-  color: #FFFFFF;
-  font-family: "BBH Sans Bartle", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.groupes__game {
-  color: #3CFC46;
-  font-size: 0.8rem;
-  font-family: "BBH Sans Bartle", sans-serif;
-  font-weight: 400;
-}
-
-/* Style pour la page chat */
-.chat {
-  padding: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  min-height: calc(100vh - 300px);
-}
-
-.chat__container {
-  display: grid;
-  grid-template-rows: 1fr;
-  margin-bottom: 2rem;
-}
-
-.chat__messages {
-  background: #000000;
-  border: 1px solid #3CFC46;
-  border-radius: 8px;
-  padding: 1.5rem;
-  overflow-y: auto;
-  max-height: 500px;
-}
-
-.chat__message {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  background: #111111;
-  border-left: 3px solid #3CFC46;
-  border-radius: 5px;
-}
-
-.chat__avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #3CFC46;
-}
-
-.chat__username {
-  color: #3CFC46;
-  font-size: 0.9rem;
-  font-family: "BBH Sans Bartle", sans-serif;
-  font-weight: 400;
-  display: block;
-  margin-bottom: 0.3rem;
-}
-
-.chat__text {
-  color: #FFFFFF;
-  margin-bottom: 0.3rem;
-  line-height: 1.4;
-  font-family: "BBH Sans Bartle", sans-serif;
-  font-weight: 400;
-  font-size: 0.9rem;
-}
-
-.chat__input {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 1rem;
-  padding: 1rem;
-  background: #000000;
-  border: 1px solid #3CFC46;
-  border-radius: 8px;
-  align-items: center;
-}
-
-.chat__field {
-  padding: 1rem;
-  background: #000000;
-  border: 1px solid #3CFC46;
-  border-radius: 25px;
-  color: #FFFFFF;
-  font-size: 1rem;
-  font-family: "BBH Sans Bartle", sans-serif;
-  font-weight: 400;
-}
-
-.chat__field::placeholder {
-  color: #666;
-}
-
-.chat__send {
-  padding: 1rem 2rem;
-  background: #3CFC46;
-  color: #000000;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  font-family: "BBH Sans Bartle", sans-serif;
-  font-weight: 400;
-  min-width: 120px;
-  font-size: 1rem;
-}
-
-
-footer {
-  margin-top: 4rem;
-  text-align: center;
-  padding: 2rem;
-  border-top: 2px solid #3CFC46;
-  font-size: 0.9rem;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-brand h2 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-  font-family: "Krona One", sans-serif;
-  font-weight: 400;
-}
-
-.footer-brand h2 span {
-  color: #3CFC46;
-}
-
-.footer-col h3 {
-  color: #3CFC46;
-  font-size: 1.1rem;
-  margin-bottom: 12px;
-  font-family: "Krona One", sans-serif;
-  font-weight: 400;
-}
-
-.footer-col ul {
-  list-style: none;
-}
-
-.footer-col li {
-  margin-bottom: 6px;
-}
-
-.footer-col a {
-  text-decoration: none;
-  color: #bbb;
-  font-family: "BBH Sans Bartle", sans-serif;
-  font-weight: 400;
-}
-
-.socials {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  gap: 10px;
-  margin-top: 10px;
-  justify-content: center;
-}
-
-.socials img {
-  width: 28px;
-  height: 28px;
-  filter: brightness(0) saturate(100%) invert(67%) sepia(95%) saturate(705%) hue-rotate(90deg) brightness(107%) contrast(101%);
-}
-
-
-/* respo pour  tablette */
-@media (max-width: 768px) {
-  .accueil__features {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
+.en-tete{ 
+  position:sticky;
+   top:0;
+    background:var(--noir);
+     z-index:200;
+   }
+.conteneur-large{
+  max-width:1200px;
+   margin:0 auto;
+    padding:14px 16px;
+  display:flex; 
+  align-items:center;
   
-  .groupes__grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-  
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-  }
-  
-  .nav-links ul {
-    gap: 50px;
-  }
+   justify-content:space-between;
+}
+.logo-site{ 
+  font-size:1.6rem;
+   line-height:1;
+   }
+.logo-site span{ 
+  color:var(--vert); 
 }
 
-/* Mobile */
-@media (max-width: 480px) {
-  nav {
-    grid-template-columns: 1fr auto;
+.navigation__toggle{ 
+  display:none;
+ }
+.navigation__burger{
+   display:block; 
+   font-size:2rem;
+    cursor:pointer; 
+    user-select:none;
+   }
+.navigation__bloc{
+  display:none; 
+  width:100%;
+  position:absolute;
+   left:0; 
+   right:0;
+    top:65px;
+  background:var(--noir);
+   border-top:1px solid var(--vert);
+  padding:16px 0;
+   gap:16px;
+  flex-direction:column;
+   align-items:center;
+}
+.navigation__liste{
+   list-style:none; 
+   display:flex;
+    flex-direction:column;
+     gap:14px; }
+.navigation__lien{
+   text-decoration:none;
+    color:#fff;
+     font-size:1rem; 
+     transition:color .2s;
+     }
+.navigation__lien:hover{
+   color:var(--vert-fonce); 
   }
-  
-  .nav-links {
-    grid-template-columns: 1fr;
-    position: relative;
-  }
-  
-  .nav-links ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: #000000;
-    border: 1px solid #3CFC46;
-    border-radius: 10px;
-    padding: 1rem;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  .nav--open .nav-links ul {
-    display: grid;
-  }
-  
-  .nav-burger {
-    display: block;
-  }
-  
-  .nav-connection {
-    display: none;
-  }
-  
-  .accueil__features {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  .accueil__title {
-    font-size: 1.6rem;
-  }
-  
-  .accueil__subtitle {
-    font-size: 1rem;
-  }
-  
-  .groupes__grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  .groupes__title {
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
-  }
-  
-  .groupes__card {
-    padding: 1rem;
-  }
-  
-  .groupes__logo {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .chat {
-    padding: 1rem;
-  }
-  
-  .chat__messages {
-    max-height: 300px;
-  }
-  
-  .chat__message {
-    padding: 0.8rem;
-  }
-  
-  .chat__avatar {
-    width: 30px;
-    height: 30px;
-  }
-  
-  .footer-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
+.navigation__lien--actif{ 
+  color:var(--vert);
+ }
+.navigation__bouton{
+  display:inline-block; 
+  background:var(--vert);
+   color:#000; 
+   text-decoration:none;
+  padding:.6rem 1.4rem; 
+  border-radius:48px; 
+  font-family:"Krona One",sans-serif;
+   transition:background .2s;
+}
+.navigation__bouton:hover{ 
+  background:var(--vert-fonce);
+   color:#fff;
+   }
+.navigation__toggle:checked ~ .navigation__bloc{ 
+  display:flex;
+ }
+
+.ligne-nav{ 
+  height:6px; 
+  background:var(--vert);
+   border:0; }
+
+@media (min-width:900px){
+  .navigation__burger{
+     display:none; 
+    }
+
+  .navigation__bloc{
+    display:flex !important;
+    position:static;
+    flex-direction:row;
+    background:none;
+    border-top:0;
+    padding:0;
+    gap:32px; 
+    margin-left: 120px; 
   }
 
-  .socials {
-    justify-content: center;
+  .navigation__liste{
+    flex-direction:row;
+    gap:32px; 
   }
 }
 
 
-@media (max-width: 480px) {
-  .groupes {
-    padding: 1rem;
+.groupes{
+   padding:40px 16px;
+    max-width:1200px;
+     margin:auto;
+      text-align:center;
+}
+.groupes__titre{ 
+  color:var(--vert); 
+  font-size:1.5rem; 
+  margin-bottom:28px; 
+}
+
+.groupes__grille{ 
+  display:grid; 
+  grid-template-columns:1fr;
+   gap:20px;
+}
+@media (min-width:600px){ 
+  .groupes__grille{ 
+    grid-template-columns:repeat(2,1fr);
+  } }
+@media (min-width:900px){ 
+  .groupes__grille{ 
+    grid-template-columns:repeat(3,1fr);
   }
-  
-  .chat {
-    padding: 0.5rem;
+   }
+@media (min-width:1200px){ 
+  .groupes__grille{ 
+    grid-template-columns:repeat(4,1fr);
   }
-  
-  .chat__input {
-    grid-template-columns: 1fr;
-    gap: 0.8rem;
+ }
+
+.groupes__carte{
+  background:#0b0b0b; 
+  border:1px solid var(--vert-fonce);
+  padding:24px 14px; 
+  border-radius:14px;
+  transition:background .2s, border-color .2s;
+   font-size:small; 
+  text-align:center;
+}
+.groupes__carte:hover{
+   background:#111; 
+   border-color:var(--vert); }
+.groupes__image{
+  width:140px; 
+  height:140px;
+   border-radius:60%;
+    object-fit:cover;
+  border:3px solid var(--vert); 
+  display:block; 
+  margin:0 auto 12px;
+}
+.groupes__nom{ 
+  font-family:"Krona One",sans-serif;
+  font-size: medium;
+   margin-bottom:4px;
+   }
+.groupes__jeu{ 
+  color:var(--gris-clair);
+ }
+
+
+.chat{ 
+  max-width:900px;
+   margin:auto; 
+   padding:32px 16px;
+   }
+.chat__messages{
+  background: url("assets/images/chat-bg.jpg.jpg") center/cover no-repeat;
+  border: 1px solid var(--vert-fonce);
+  padding: 18px;
+  border-radius: 12px;
+  display:flex; 
+  flex-direction:column;
+   gap:18px;
+   font-size: small;
+  position: relative;
+}
+
+
+.chat__messages::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,0.55);
+  border-radius: inherit;
+}
+
+.chat__message{
+  position:relative;
+  z-index:2; 
+}
+.chat__message{
+   display:flex;
+    gap:12px; 
+    align-items:flex-start;
+   }
+.chat__avatar{ 
+  width:56px; 
+  height:56px;
+   border-radius:50%;
+   object-fit:cover; 
+   border:2px solid var(--vert); 
   }
-  
-  .chat__send {
-    width: 100%;
+.chat__nom{
+   color:var(--vert);
+   font-family:"Krona One",sans-serif; 
+   font-size: small;
   }
-  
-  .groupes__card {
-    padding: 0.8rem;
+.chat__texte{ 
+  font: size 0.5em;
+   line-height:1;
+   }
+.chat__saisie{
+   display:flex;
+   gap:12px; 
+   margin-top:20px;
+   }
+.chat__champ{
+  flex:1;
+   padding:10px 14px;
+    border-radius:40px; 
+    background:var(--noir);
+  color:#fff;
+   border:1px solid var(--vert);
+}
+.chat__envoyer{
+  background:var(--vert); 
+  color:#000; 
+  border:0; border-radius:40px;
+  padding:10px 16px;
+   font-family:"Krona One",sans-serif; 
+   cursor:pointer; 
+   transition:background .2s;
+}
+.chat__envoyer:hover{ 
+  background:var(--vert-fonce);
+ }
+
+
+.pied{
+  background:var(--noir);
+  border-top:1px solid #111;
+  margin-top:40px; 
+  padding:40px 16px;
+}
+.pied__grille{
+  max-width:1200px;
+  margin:0 auto;
+  display:grid;  
+  gap:24px;
+  grid-template-columns:1fr;
+  text-align:center;
+}
+.pied__brand .pied__titre{
+   margin-bottom:8px; 
+   font-size: medium;
   }
-  
-  .groupes__logo {
-    width: 80px;
-    height: 80px;
+.pied__titre span{
+   color:var(--vert);
+}
+.pied__texte{ 
+  opacity:.85;
+  font-size: small;
+  margin-bottom:10px;
+
+}
+.pied__reseaux{ 
+  display:flex;
+   gap:10px; 
+   justify-content:center; 
   }
-  
-  .groupes__name {
-    font-size: 0.8rem;
+.pied__reseaux img{
+   width:26px; 
+   filter:invert(100%); 
+   opacity:.9; 
   }
-  
-  .groupes__game {
-    font-size: 0.7rem;
-  }
-  
-  .accueil__title {
-    font-size: 1.4rem;
-  }
-  
-  .accueil__subtitle {
-    font-size: 0.9rem;
+
+.pied__colonne h3{ 
+  color:var(--vert);
+   font-size:1rem;
+    margin-bottom:12px;
+}
+.pied__colonne ul{
+   list-style:none;
+    display:grid;
+     gap:8px;
+     }
+.pied__colonne a{ 
+  text-decoration:none;
+   color:#ccc; 
+   font-size:.95rem;
+    transition:color .15s;
+   }
+.pied__colonne a:hover{ 
+  color:var(--vert-fonce);
+ }
+
+@media (min-width:900px){
+  .pied__grille{ 
+    grid-template-columns:2fr 1fr 1fr 1fr;
+     text-align:left;
+     }
+  .pied__reseaux{ 
+    justify-content:flex-start; 
   }
 }
