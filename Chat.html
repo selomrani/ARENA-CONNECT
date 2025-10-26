@@ -1,69 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-   
-     <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arena connect</title>
-    <link rel="stylesheet" href="style.css">
-      
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat - Arena Connect</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Krona+One&display=swap" rel="stylesheet">
 </head>
 <body>
- 
 
-  
+<header class="en-tete">
+  <div class="conteneur-large navigation">
+    <div class="logo-site">ARENA <br><span>CONNECT</span></div>
 
- 
-  <footer>
-   
-    <div class="footer-brand">
-      <h2>ARENA <span>CONNECT</span></h2>
-      <div class="footer-social">
-        <p>Rejoignez-nous :</p>
-        <div class="social-icons">
-          <a href="#"><img src="discord.png" alt="Discord"></a>
-          <a href="#"><img src="twitter.png" alt="Twitter"></a>
-          <a href="#"><img src="twitch.png" alt="Twitch"></a>
-          <a href="#"><img src="youtube.png" alt="YouTube"></a>
-        </div>
+    <input type="checkbox" id="nav-toggle" class="navigation__toggle" />
+    <label for="nav-toggle" class="navigation__burger">☰</label>
+
+    <div class="navigation__bloc">
+      <ul class="navigation__liste">
+        <li><a class="navigation__lien" href="accueil.html">Accueil</a></li>
+        <li><a class="navigation__lien" href="actualites.html">Actualites</a></li>
+        <li><a class="navigation__lien navigation__lien--actif" href="chat.html">Chat</a></li>
+        <li><a class="navigation__lien" href="groupes.html">Groupes</a></li>
+      </ul>
+      <a class="navigation__bouton" href="connexion.html">Connexion</a>
+    </div>
+  </div>
+  <hr class="ligne-nav" />
+</header>
+
+<main class="chat">
+
+  <div class="chat__messages">
+    <div class="chat__message">
+      <img src="assets/images/telajaoui.png" class="chat__avatar" alt="teljaoui">
+      <div><span class="chat__nom">progamer99</span><br><span class="chat__texte">Salut !</span></div>
+    </div>
+
+    <div class="chat__message">
+      <img src="assets/images/soufiane.png" class="chat__avatar" alt="soufiane">
+      <div><span class="chat__nom">Teljaoui</span><br><span class="chat__texte">Tu veux jouer ce soir ?</span></div>
+    </div>
+
+    <div class="chat__message">
+      <img src="assets/images/bouss.png" class="chat__avatar" alt="avatar boussouir">
+      <div><span class="chat__nom">Soufiane</span><br><span class="chat__texte">Je suis chaud pour du Apex Ranked !</span></div>
+    </div>
+
+    <div class="chat__message">
+      <img src="assets/images/telajaoui.png" class="chat__avatar" alt="me">
+      <div><span class="chat__nom">boussouir</span><br><span class="chat__texte">Qui est dispo ce week-end ?</span></div>
+    </div>
+  </div>
+
+  <div class="chat__saisie">
+    <input type="text" class="chat__champ" placeholder="Entrer ton message..." />
+    <button class="chat__envoyer">Envoyer</button>
+  </div>
+
+</main>
+
+<footer class="pied">
+  <div class="pied__grille">
+    <div class="pied__brand">
+      <h2 class="pied__titre titre-principal">ARENA <span>CONNECT</span></h2>
+      <p class="pied__texte">Rejoignez-nous :</p>
+      <div class="pied__reseaux">
+        <a href="#"><img src="assets/images/discord.svg" alt="Discord"></a>
+        <a href="#"><img src="assets/images/twitter-svg.svg" alt="Twitter"></a>
+        <a href="#"><img src="assets/images/twitch-svg.svg" alt="Twitch"></a>
+        <a href="#"><img src="assets/images/youtube.svg" alt="YouTube"></a>
       </div>
     </div>
 
-    <div class="footer-col">
+    <div class="pied__colonne">
       <h3>Plateforme</h3>
       <ul>
         <li><a href="#">Chat</a></li>
-        <li><a href="#">Pour les organisateurs</a></li>
-        <li><a href="#">À propos</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#">Groupes</a></li>
+        <li><a href="#">Actualites</a></li>
+        <li><a href="#">Communautes</a></li>
       </ul>
     </div>
 
-   
-    <div class="footer-col">
-      <h3>Fonctionnalités & Produits</h3>
+    <div class="pied__colonne">
+      <h3>Fonctionnalites</h3>
       <ul>
-        <li><a href="#">Logiciel d’organisation</a></li>
-        <li><a href="#">Tournoi Boost</a></li>
-        <li><a href="#">Circuit Pro</a></li>
-        <li><a href="#">Plateforme personnalisée</a></li>
-        <li><a href="#">API Développeur</a></li>
-        <li><a href="#">Tarification</a></li>
+        <li><a href="#">Organisation Tournois</a></li>
+        <li><a href="#">Classements</a></li>
+        <li><a href="#">Profil Joueur</a></li>
+        <li><a href="#">API Developpeur</a></li>
       </ul>
     </div>
 
-    
-    <div class="footer-col">
+    <div class="pied__colonne">
       <h3>Support</h3>
       <ul>
-        <li><a href="#">Centre d’aide</a></li>
-        <li><a href="#">Conditions d’utilisation</a></li>
-        <li><a href="#">Politique de confidentialité</a></li>
+        <li><a href="#">Centre d'aide</a></li>
+        <li><a href="#">Conditions d'utilisation</a></li>
+        <li><a href="#">Politique de confidentialite</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
-  </footer>
+  </div>
+</footer>
 
 </body>
-</html>  
-
+</html>
