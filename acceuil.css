@@ -36,7 +36,7 @@ button{
 
 nav {
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 40% 60%;
   padding: 1rem;
   backdrop-filter: blur(15px);
 
@@ -45,12 +45,13 @@ nav {
 .nav-links {
   grid-column: 2;
   display: grid;
-  justify-content: flex-end;
-  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
 
 }
 
 .nav-links ul{
+  grid-column: 1;
   display: flex;
   list-style: none;
   gap: 100px;
@@ -80,6 +81,7 @@ nav {
 
 
 .nav-connection {
+  grid-column: 2;
   width: 8rem;
   height: 3rem;
   border-radius: 50px;
@@ -89,6 +91,7 @@ nav {
   font-style: normal;
   border: none;
   grid-column: 5;
+  cursor: pointer;
 }
 
 .nav-line {
@@ -96,6 +99,9 @@ nav {
   width: 100%;
   background: #3CFC46;
   border: none;
+}
+button{
+  cursor: pointer;
 }
 
 .hero {
