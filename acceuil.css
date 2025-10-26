@@ -1,0 +1,694 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bbh-sans-bartle-regular {
+  font-family: "BBH Sans Bartle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background: black;
+  color: white;
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: ease-in 0.5s;
+
+}
+
+header {
+  top: 0;
+  height: 5rem;
+  padding-bottom: 50px;
+  position: sticky;
+  background: rgba(0, 0, 0, 0.619);
+}
+button{
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border: none;
+  grid-column: 5;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 1rem;
+  backdrop-filter: blur(15px);
+
+}
+
+.nav-links {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+
+}
+.menuburger{
+  display: none;
+}
+
+.nav-links ul{
+  grid-column: 1;
+  display: flex;
+  list-style: none;
+  gap: 100px;
+  margin-top: 0.75rem;
+}
+
+.arena-logo {
+  font-family: "BBH Sans Bartle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 1rem;
+}
+
+.arena-logo span {
+  color: #3CFC46;
+}
+.small-line{
+  margin: 5rem;
+  margin-bottom: 8rem;
+  height: 10px;
+  border: none;
+  background: #00ff66;
+  width: 300px;
+  margin-left: 35rem;
+  border-radius: 50px;
+}
+
+
+.nav-connection {
+  grid-column: 2;
+  width: 8rem;
+  height: 3rem;
+  border-radius: 50px;
+  background: #3CFC46;
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border: none;
+  grid-column: 5;
+  cursor: pointer;
+}
+
+.nav-line {
+  height: 0.5rem;
+  width: 100%;
+  background: #3CFC46;
+  border: none;
+}
+button{
+  cursor: pointer;
+}
+
+.hero {
+  background-image: url("assets/acceuil/hero.jpg");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 40rem;
+  display: grid;
+  grid-template-columns: 5rem 5rem 5rem;
+  grid-template-rows: 5rem 5rem 5rem 5rem 5rem;
+}
+
+.hero-title {
+  grid-column: 7;
+  grid-row: 3;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-family: "BBH Sans Bartle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero-description {
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 6rem;
+  margin-left: 1rem;
+}
+
+.hero-leanmore-button {
+  width: 186px;
+  height: 47px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: none;
+  background: #105D09;
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hero-title-connect {
+  color: #3CFC46;
+}
+
+.hero-leanmore-button :hover {
+  background: #3CFC46;
+  box-shadow: 0 0 15px #3CFC46;
+}
+.website-intro{
+  padding: 2rem;
+}
+.acceuil-title{
+  margin-left: 3rem;
+  font-size: 1rem;
+  text-decoration: underline;
+  text-decoration-color: #3CFC46;
+  text-underline-offset: 20px;
+  text-decoration-thickness: 5px;
+}
+.website-intro-cards{
+  display: grid;
+  grid-template-columns: repeat(4 1fr);
+  margin-top: 3rem;
+}
+.website-intro img{
+  width: 308px;
+  height: 173px;
+  border-radius: 20px;
+}
+.website-intro-cards p{
+  margin-top: 3rem;
+}
+.website-intro-card1{
+  grid-column: 1;
+  width: 308px;
+  height: 476px;
+  background: linear-gradient(180deg, #000 , #2D6530 , #3CFC46 );
+  font-size: 40px;
+  text-align: center;
+  border-radius: 40px;
+}
+.website-intro-card2{
+  grid-column: 2;
+  width: 308px;
+  height: 476px;
+  background: linear-gradient(180deg, #000 0%, #2D6530, #3CFC46);
+  font-size: 40px;
+  text-align: center;
+  border-radius: 40px;
+  margin-top: 8rem;
+}
+.website-intro-card3{
+  grid-column: 3;
+  width: 308px;
+  height: 476px;
+  background: linear-gradient(180deg, #000 0%, #2D6530, #3CFC46);
+  font-size: 30px;
+  text-align: center;
+  border-radius: 40px;
+}
+.website-intro-card4{
+  grid-column: 4;
+  width: 308px;
+  height: 476px;
+  background: linear-gradient(180deg, #000 0%, #2D6530, #3CFC46);
+  font-size: 40px;
+  text-align: center;
+  border-radius: 40px; 
+  margin-top: 8rem;
+ 
+}
+.getstarted{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+}
+.getstarted button{
+  width: 450px;
+  height: 100px;
+  border-radius: 50px;
+  background: #3CFC46;
+  box-shadow: 0 0 15px #3CFC46;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  margin-right: 6rem;
+}
+.newscards-acceuil{
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+  gap: 10rem;
+  margin-top: 3rem;
+  justify-content: center;
+
+}
+.newscards-acceuil img{
+  width: 308px;
+  height: 173px;
+  border-radius: 20px;
+
+}
+.newscards-acceuil p{
+ margin-top: 2rem;
+
+}
+.newscard1{
+  grid-column: 1;
+  width: 308px;
+  height: 476px;
+  background: linear-gradient(180deg, #000 0%, #2D6530, #3CFC46);
+  font-size: 33px;
+  text-align: center;
+  border-radius: 40px;
+}
+.newscard2{
+  grid-column: 2;
+  width: 308px;
+  height: 476px;
+  background: linear-gradient(180deg, #000 0%, #2D6530, #3CFC46);
+  font-size: 35px;
+  text-align: center;
+  border-radius: 40px;
+}
+.newscard3{
+  grid-column: 3;
+  width: 308px;
+  height: 476px;
+  background: linear-gradient(180deg, #000 0%, #2D6530, #3CFC46);
+  font-size: 35px;
+  text-align: center;
+  border-radius: 40px;
+
+}
+.seemore-buuton-acceuil{
+  width: 200px;
+  height: 45px;
+  background: #3CFC46;
+  color: black;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  font-size: 20px;
+  margin-left: 41rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem; 
+  cursor: pointer;
+  }
+  /* login */
+  .body-login{
+    background-image: url("assets/acceuil/login.jpg");
+    background-size: contain;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+  }
+  .login-title{
+  font-family: "BBH Sans Bartle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 3rem;
+  color: #3CFC46;
+  text-shadow: 0 0 20px #000;
+  margin-bottom: 2rem;
+  grid-row: 1;
+  
+  }
+  .login-input{
+    width: 30%;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    height: 30rem;
+    padding: 1rem ;
+    line-height: 4rem;
+    grid-row: 2;
+    background: #105d0920;
+    backdrop-filter: blur(50px);
+    border-radius: 50px;
+   
+  }
+  .input-login1{
+    display: grid;
+    grid-column: 2;
+  }
+  .input-login2{
+    grid-row: 4;
+    grid-column: 2;
+    display: grid;
+
+  }
+  label{
+    text-align: center;
+  }
+  input{
+    width: 18rem;
+    justify-self: center;
+    padding-left: 10px;
+    height: 4rem;
+    border-radius: 50px;
+    margin-top: 5px;
+    border: none;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+  }
+  .mdpoublie{
+      grid-row: 5;
+      text-align: right ;
+      font-size: 14px;
+      grid-column: 2; 
+  }
+  .button-connection-login{
+    width: 10rem;
+    height: 3rem;
+    background: #00ff66;
+    grid-row: 8;
+    grid-column: 2;
+    margin-left: 4rem;  
+    border-radius: 30px;
+    box-shadow: 0 0 10px #3CFC46;
+    border: none;  
+  }
+  .loginbottom{
+    grid-row: 3;
+    justify-self: center;
+    margin-top: -6rem;
+    display: flex;
+    align-items: center;
+  }
+  .loginbottom p{
+  font-family: "BBH Sans Bartle", sans-serif;
+  font-weight: 400;
+  font-style: normal;  
+  color: #3CFC46;
+  text-shadow: 0 0 20px #000000;
+}
+.loginbottom button{
+    width: 10rem;
+    height: 3rem;
+    background: #00ff66;
+    grid-row: 8;
+    grid-column: 2;
+    margin-left: 4rem;  
+    border-radius: 30px;
+    box-shadow: 0 0 10px #3CFC46;
+    border: none;  }
+/* signup */
+.body-signup{
+  background-image: url("assets/acceuil/signup.jpg");
+  background-size: cover;
+}
+.signup-input{
+    width: 30%;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    height: 35rem;
+    padding: 1rem ;
+    line-height: 4rem;
+    grid-row: 2;
+    background: #105d0920;
+    backdrop-filter: blur(50px);
+    border-radius: 50px;
+   
+  }
+  .input-login1{
+    display: grid;
+    grid-column: 2;
+  }
+  .input-login2{
+    grid-row: 4;
+    grid-column: 2;
+    display: grid;
+
+  }
+  label{
+    text-align: center;
+  }
+  input{
+    width: 20rem;
+    justify-self: center;
+    padding-left: 10px;
+    height: 4rem;
+    border-radius: 50px;
+    margin-top: 5px;
+    border: none;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+  }
+
+  .button-connection-login{
+    width: 10rem;
+    height: 3rem;
+    background: #00ff66;
+    grid-row: 8;
+    grid-column: 2;
+    margin-left: 4rem;  
+    border-radius: 30px;
+    box-shadow: 0 0 10px #3CFC46;
+    border: none;  
+  }
+
+  
+
+
+/* === FOOTER GRID === */
+footer {
+  background-color: #000;
+  padding: 60px 10%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  border-top: 1px solid #111;
+  height: 20rem;
+}
+
+/* === BRAND COLUMN === */
+.footer-brand h2 {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  font-family: "BBH Sans Bartle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer-brand span {
+  color: #00ff66;
+  font-weight: bold;
+}
+
+.footer-social {
+  margin-top: 25px;
+}
+
+.footer-social p {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: grid;
+  grid-template-columns: repeat(4, 40px);
+  gap: 10px;
+}
+
+.social-icons a {
+  background-color: #0a0e27;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #00ff66;
+  transform: scale(1.1);
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+  filter: invert(100%);
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+
+
+/* === LINKS === */
+.footer-col h3 {
+  color: #00ff66;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col li {
+  margin-bottom: 8px;
+}
+
+
+/* === RESPONSIVE === */
+@media (max-width: 1024px) {
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+  }
+
+}
+
+@media (max-width: 600px) {
+ 
+  footer {
+    display: flex;
+    padding: 5rem;
+    text-align: center;
+    padding: 40px 8%;
+  }
+  .hero{
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 200px 250px 500px;
+  }
+  .hero-title{
+    grid-column: 3;
+    line-height: 30px;
+    grid-row: 4;
+    
+  }
+  .hero-description{
+    font-size: 8px;
+  }
+  .small-line{
+    margin-left: 18rem;
+  }
+  nav{
+    display: grid;
+    grid-template-columns: 200px 500px 100px;
+    font-size: 20px;
+  
+  }
+  .nav-links{
+    display: none;
+  }
+  .menuburger{
+    display: block;
+    grid-column: 5;
+  
+  }
+  .nav-line{
+    width: 57rem;
+  }
+  .acceuil-title{
+    width: 50rem;
+    text-align: center;
+    font-size: larger;
+
+  }
+  .website-intro-cards{
+    width: 57rem;
+    display: grid;
+    grid-template-columns: 25rem 25rem;
+    grid-template-rows: 25rem 25rem;
+    gap: 8rem;
+    justify-content: center;
+  }
+  .website-intro-card1{
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .website-intro-card2{
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 0;
+  }
+  .website-intro-card3{
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .website-intro-card4{
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 0;
+  }
+  .getstarted{
+    justify-self: center;
+    margin-left: 40rem;
+    margin-top: 8rem;
+  }
+  .seemore-buuton-acceuil{
+    width: 20rem;
+    height: 5rem;
+    margin-left: 18rem;
+    font-size: 28px;
+  }
+  
+
+  .social-icons {
+    justify-content: center;
+    grid-template-columns: repeat(4, 36px);
+  }
+  .body-login{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .login-title{
+    font-size: 30px;
+  }
+  .login-input{
+    width: 85%;
+  }
+  .loginbottom {
+    padding: 2rem;
+    margin-top: 4.25rem;
+    font-size: 10px;
+}
+.body-signup{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.signup-input{
+  width: 85%;
+  height: 40rem;
+  
+}
+.button-connection-login{
+  margin-left: 5rem;
+}
+}
+
+
+
+
+
+
+a {
+  text-decoration: none;
+  color: #bfbfbf;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00ff66;
+}
