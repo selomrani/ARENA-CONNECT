@@ -1,5 +1,5 @@
 body{
-    background: black;
+    background:  #042F06;
     color: white;
     font-family: "Krona One", sans-serif;
     font-weight: 400;
@@ -159,9 +159,7 @@ height: 180px;
     padding-top: 10%;
     
 }
-.date{
-    color: #000000;
-}
+
 .Actualite-section2-div{
     
     
@@ -184,15 +182,15 @@ height: 180px;
  {
     width: 80%;
     height: 600px;
-    margin: auto    ;
+    margin: auto;
+    
  }
  .Actualite-section-1{
     padding: 16px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background: red;
-    
+    background:  #042F06;
  }
 
  .Actualite-section-2
@@ -249,30 +247,59 @@ height: 180px;
     color: white;
     border: none;
     font-size: 20px;
+    
 
  }
  .Actualite-section-blog{
-    background: yellow;
-    height: 2000px;
+    background: #042F06;
+    height: 350px;
     margin: auto;
     width: 80%;
     overflow: hidden;
+    
 }
 .Actualite-section-20{
     transition: all 0.3s ease;
     display: flex;
     background: #3f413f;
-    justify-content: space-between;
+
     align-items: center;
-    height: 400px;
-    margin: 60px;
+    height: 300px;
+    margin: 50px;
     border-radius: 19px;
     overflow: hidden;
  }
  .Actualite-section-20 img{
     width: 200px;
-    height: 350px;
+    height: 300px;
+    border-radius: 15px;
  }
 
 
  /* hero section style end */
+ .Actualite-section2-div{
+    display: flex;
+    justify-content: space-between;
+    
+ }
+
+ .Actualite-container-15{
+    display: flex;
+    justify-self: end;
+    justify-content:space-between;
+    padding: 15px;
+    
+ }
+ .Actualite-container-glog2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+ .Actualite-container-glog2 h3{
+    color:#101214 ;
+    padding: 15px;
+ }
+ .date{
+    color: #000000;
+   
+}
