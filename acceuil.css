@@ -1,45 +1,3 @@
-<<<<<<< HEAD
-body{
-    background:  #042F06;
-    color: white;
-    font-family: "Krona One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-
-}
-header{
-    top: 0;
-    height: 2rem;
-    padding-bottom: 50px;
-}
-nav{
-    display: flex;
-    padding-right: 2rem;
-    justify-content: space-between;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-.nav-links{
-    display: flex;
-    justify-content: space-around;
-    gap: 100px;
-}
-ul{
-    display: flex;
-    list-style: none;
-    gap: 100px;
-
-}
-.arena-logo{
-     font-family: "BBH Sans Bartle", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.arena-logo span{
-    color: #3CFC46;
-}
-.nav-connection{
-=======
 * {
   margin: 0;
   padding: 0;
@@ -61,6 +19,7 @@ body {
   transition: ease-in 0.5s;
 
 }
+
 
 header {
   top: 0;
@@ -134,7 +93,6 @@ nav {
 
 .nav-connection {
   grid-column: 2;
->>>>>>> 19c807be13f6af38ac45e661f79f384904bf5991
   width: 8rem;
   height: 3rem;
   border-radius: 50px;
@@ -142,275 +100,17 @@ nav {
   font-family: "Krona One", sans-serif;
   font-weight: 400;
   font-style: normal;
-<<<<<<< HEAD
-}
-.nav-line{
-=======
   border: none;
   grid-column: 5;
   cursor: pointer;
 }
 
 .nav-line {
->>>>>>> 19c807be13f6af38ac45e661f79f384904bf5991
   height: 0.5rem;
   width: 100%;
   background: #3CFC46;
   border: none;
 }
-<<<<<<< HEAD
-.Actualites-links{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 335px;
-    left: 0px;
-    right: 0px;
-    top: 134px;
-background: #042F06;
-}
-.Actualites-a{
-    width: 147.5px;
-    height: 196.66px;
-    background: #221B32;
-}
-.Actualites-body{
-    margin: 0px;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-.Actualites-bar{
-width: 100%;
-height: 77px;
-left: 0px;
-background: #011502;
-}
-.Actualites-nav-bar{    
-height: 24px;
-display: flex;
-justify-content: space-around;
-align-items: center;
-}
-.Actualites-nav-a{
-width: 150px;
-height: 24px;
-left: 334px;
-top: 491px;
-margin-top: 30px;
-font-family: 'Krona One';
-font-style: normal;
-font-weight: 400;
-font-size: 28px;
-line-height: 30px;
-color: #FFFFFF;
-text-decoration-line: none;
-}
-
-/* .Actualite-section-1 {
-    background-color: #042F06;
-    width: 95%;
-    margin-left: 3%;
-    height: 50rem;
-    display: grid;
-    grid-template-columns: 40% 40%;
-    justify-content: space-between;
-    
-    
-}
-.Actualite-section-img , .c{
-    background-image: url(/assets/act/Actualites9.png);
-    width: 100%;
-    height: 60%;
-    background-repeat: no-repeat;
-   
-}
-.Actualite-section-img1{
-   background-image: url(/assets/act/Actualites10.png);
-    width: 100%;
-    height: 57%;
-    background-repeat: no-repeat; 
-
-}
-.Actualite-section{
-    background-color: #042F06;
-  
-}
-
-.Actualite-section-text{
-background-color: #3B3B3B;
-height: 180px;
-
-}
-
-.paragraph {
-    padding-top: 50%;
-    font-size: 20px;
-}
-
-
-.Actualite-section-button {
-    width: 20%;
-    height: 35px;
-    margin-left: 10px;
-    border-radius: 15px;
-    background-color: #3CFC46;
-    color:#FFFFFF;
-    border: none;
-    font-size: 20px;
-}
-
-.Actualite-container {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 10%;
-    
-}
-
-.Actualite-section2-div{
-    
-    
-   
-}
-.Actualite-section-20{
-    background: #3B3B3B;
-    height: 300px;
-    width: 100%;
-    border-radius: 20px;
-
-}
-
-.img {
-    width: 17%;
-    
-} */
- /* hero section style start */
- .Actualite-section
- {
-    width: 80%;
-    height: 600px;
-    margin: auto;
-    
- }
- .Actualite-section-1{
-    padding: 16px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background:  #042F06;
- }
-
- .Actualite-section-2
- {
-    transition: all 0.3s ease;
-    display: flex;
-    background: #3f413f;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-    margin: 19px;
-    border-radius: 19px;
-    flex-direction: column;
-    overflow: hidden;
- }
- .Actualite-section-img{
-    width: 100%;
-    height: 190%;
-    background: url(/assets/act/Actualites9.png);
-    display: flex;justify-content: start;
-    align-items: end;
-    
-
- }
- .Actualite-section-img1{
-    width: 100%;
-    height: 190%;
-    background: url(/assets/act/Actualites10.png);
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;justify-content: start;
-    align-items: end;
-    
- }
-
- .Actualite-section-text{
-    padding: 40px;
-    font-size: medium;
- }
- .Actualite-section-2:hover{
-    transform: scale(1.05);
- }
- .Actualite-container{
-    display: flex;
-    padding: 20px;
-    justify-content: space-between;
-    align-items: center;
- }
- .Actualite-section-button{
-    background: #3CFC46;
-    padding: 20px;
-    border-radius: 20px;
-    color: white;
-    border: none;
-    font-size: 20px;
-    
-
- }
- .Actualite-section-blog{
-    background: #042F06;
-    height: 350px;
-    margin: auto;
-    width: 80%;
-    overflow: hidden;
-    
-}
-.Actualite-section-20{
-    transition: all 0.3s ease;
-    display: flex;
-    background: #3f413f;
-
-    align-items: center;
-    height: 300px;
-    margin: 50px;
-    border-radius: 19px;
-    overflow: hidden;
- }
- .Actualite-section-20 img{
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
- }
-
-
- /* hero section style end */
- .Actualite-section2-div{
-    display: flex;
-    justify-content: space-between;
-    
- }
-
- .Actualite-container-15{
-    display: flex;
-    justify-self: end;
-    justify-content:space-between;
-    padding: 15px;
-    
- }
- .Actualite-container-glog2{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
- }
- .Actualite-container-glog2 h3{
-    color:#101214 ;
-    padding: 15px;
- }
- .date{
-    color: #000000;
-   
-}
-=======
 button{
   cursor: pointer;
 }
@@ -769,311 +469,6 @@ button{
 
   
 
-   justify-content:space-between;
-}
-
-.logo-site{ 
-  font-size:1.6rem;
-   line-height:1;
-   }
-.logo-site span{ 
-  color:var(--vert); 
-}
-
-.navigation__toggle{ 
-  display:none;
- }
-.navigation__burger{
-   display:block; 
-   font-size:2rem;
-    cursor:pointer; 
-    user-select:none;
-   }
-.navigation__bloc{
-  display:none; 
-  width:100%;
-  position:absolute;
-   left:0; 
-   right:0;
-    top:65px;
-  background:var(--noir);
-   border-top:1px solid var(--vert);
-  padding:16px 0;
-   gap:16px;
-  flex-direction:column;
-   align-items:center;
-}
-.navigation__liste{
-   list-style:none; 
-   display:flex;
-    flex-direction:column;
-     gap:14px; }
-.navigation__lien{
-   text-decoration:none;
-    color:#fff;
-     font-size:1rem; 
-     transition:color .2s;
-     }
-.navigation__lien:hover{
-   color:var(--vert-fonce); 
-  }
-.navigation__lien--actif{ 
-  color:var(--vert);
- }
-.navigation__bouton{
-  display:inline-block; 
-  background:var(--vert);
-   color:#000; 
-   text-decoration:none;
-  padding:.6rem 1.4rem; 
-  border-radius:48px; 
-  font-family:"Krona One",sans-serif;
-   transition:background .2s;
-}
-.navigation__bouton:hover{ 
-  background:var(--vert-fonce);
-   color:#fff;
-   }
-.navigation__toggle:checked ~ .navigation__bloc{ 
-  display:flex;
- }
-
-.ligne-nav{ 
-  height:6px; 
-  background:var(--vert);
-   border:0; }
-
-@media (min-width:900px){
-  .navigation__burger{
-     display:none; 
-    }
-
-  .navigation__bloc{
-    display:flex !important;
-    position:static;
-    flex-direction:row;
-    background:none;
-    border-top:0;
-    padding:0;
-    gap:32px; 
-    margin-left: 120px; 
-  }
-
-  .navigation__liste{
-    flex-direction:row;
-    gap:32px; 
-  }
-}
-
-
-.groupes{
-   padding:40px 16px;
-    max-width:1200px;
-     margin:auto;
-      text-align:center;
-}
-.groupes__titre{ 
-  color:var(--vert); 
-  font-size:1.5rem; 
-  margin-bottom:28px; 
-}
-
-.groupes__grille{ 
-  display:grid; 
-  grid-template-columns:1fr;
-   gap:20px;
-}
-@media (min-width:600px){ 
-  .groupes__grille{ 
-    grid-template-columns:repeat(2,1fr);
-  } }
-@media (min-width:900px){ 
-  .groupes__grille{ 
-    grid-template-columns:repeat(3,1fr);
-  }
-   }
-@media (min-width:1200px){ 
-  .groupes__grille{ 
-    grid-template-columns:repeat(4,1fr);
-  }
- }
-
-.groupes__carte{
-  background:#0b0b0b; 
-  border:1px solid var(--vert-fonce);
-  padding:24px 14px; 
-  border-radius:14px;
-  transition:background .2s, border-color .2s;
-   font-size:small; 
-  text-align:center;
-}
-.groupes__carte:hover{
-   background:#111; 
-   border-color:var(--vert); }
-.groupes__image{
-  width:140px; 
-  height:140px;
-   border-radius:60%;
-    object-fit:cover;
-  border:3px solid var(--vert); 
-  display:block; 
-  margin:0 auto 12px;
-}
-.groupes__nom{ 
-  font-family:"Krona One",sans-serif;
-  font-size: medium;
-   margin-bottom:4px;
-   }
-.groupes__jeu{ 
-  color:var(--gris-clair);
- }
-
-
-.chat{ 
-  max-width:900px;
-   margin:auto; 
-   padding:32px 16px;
-   }
-.chat__messages{
-  background: url("assets/images/chat-bg.jpg.jpg") center/cover no-repeat;
-  border: 1px solid var(--vert-fonce);
-  padding: 18px;
-  border-radius: 12px;
-  display:flex; 
-  flex-direction:column;
-   gap:18px;
-   font-size: small;
-  position: relative;
-}
-
-
-.chat__messages::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background: rgba(0,0,0,0.55);
-  border-radius: inherit;
-}
-
-.chat__message{
-  position:relative;
-  z-index:2; 
-}
-.chat__message{
-   display:flex;
-    gap:12px; 
-    align-items:flex-start;
-   }
-.chat__avatar{ 
-  width:56px; 
-  height:56px;
-   border-radius:50%;
-   object-fit:cover; 
-   border:2px solid var(--vert); 
-  }
-.chat__nom{
-   color:var(--vert);
-   font-family:"Krona One",sans-serif; 
-   font-size: small;
-  }
-.chat__texte{ 
-  font: size 0.5em;
-   line-height:1;
-   }
-.chat__saisie{
-   display:flex;
-   gap:12px; 
-   margin-top:20px;
-   }
-.chat__champ{
-  flex:1;
-   padding:10px 14px;
-    border-radius:40px; 
-    background:var(--noir);
-  color:#fff;
-   border:1px solid var(--vert);
-}
-.chat__envoyer{
-  background:var(--vert); 
-  color:#000; 
-  border:0; border-radius:40px;
-  padding:10px 16px;
-   font-family:"Krona One",sans-serif; 
-   cursor:pointer; 
-   transition:background .2s;
-}
-.chat__envoyer:hover{ 
-  background:var(--vert-fonce);
- }
-
-
-.pied{
-  background:var(--noir);
-  border-top:1px solid #111;
-  margin-top:40px; 
-  padding:40px 16px;
-}
-.pied__grille{
-  max-width:1200px;
-  margin:0 auto;
-  display:grid;  
-  gap:24px;
-  grid-template-columns:1fr;
-  text-align:center;
-}
-.pied__brand .pied__titre{
-   margin-bottom:8px; 
-   font-size: medium;
-  }
-.pied__titre span{
-   color:var(--vert);
-}
-.pied__texte{ 
-  opacity:.85;
-  font-size: small;
-  margin-bottom:10px;
-
-}
-.pied__reseaux{ 
-  display:flex;
-   gap:10px; 
-   justify-content:center; 
-  }
-.pied__reseaux img{
-   width:26px; 
-   filter:invert(100%); 
-   opacity:.9; 
-  }
-
-.pied__colonne h3{ 
-  color:var(--vert);
-   font-size:1rem;
-    margin-bottom:12px;
-}
-.pied__colonne ul{
-   list-style:none;
-    display:grid;
-     gap:8px;
-     }
-.pied__colonne a{ 
-  text-decoration:none;
-   color:#ccc; 
-   font-size:.95rem;
-    transition:color .15s;
-   }
-.pied__colonne a:hover{ 
-  color:var(--vert-fonce);
- }
-
-@media (min-width:900px){
-  .pied__grille{ 
-    grid-template-columns:2fr 1fr 1fr 1fr;
-     text-align:left;
-     }
-  .pied__reseaux{ 
-    justify-content:flex-start; 
-
-
 
 /* === FOOTER GRID === */
 footer {
@@ -1143,6 +538,7 @@ a{
 }
 
 
+/* === LINKS === */
 .footer-col h3 {
   color: #00ff66;
   font-size: 1rem;
@@ -1158,7 +554,7 @@ a{
 }
 
 
-
+/* === RESPONSIVE === */
 @media (max-width: 1024px) {
   footer {
     grid-template-columns: repeat(2, 1fr);
@@ -1264,7 +660,6 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
   }
   .login-title{
     font-size: 30px;
@@ -1428,6 +823,11 @@ a{
 }
 }
 
+
+
+
+
+
 a {
   text-decoration: none;
   color: #bfbfbf;
@@ -1437,4 +837,3 @@ a {
 a:hover {
   color: #00ff66;
 }
->>>>>>> 19c807be13f6af38ac45e661f79f384904bf5991
