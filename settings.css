@@ -464,7 +464,6 @@ font-size: 14px;
 color: #cccccc;
 display: block;
 margin-bottom: 5px;
-text-transform: uppercase;
 letter-spacing: 1px;
 }
 
@@ -533,98 +532,3 @@ line-height: 50px;
   line-height: 36px;
 }
 }
-
-header {
-  top: 0;
-  height: 5rem;
-  padding-bottom: 50px;
-  position: sticky;
-  background: rgba(0, 0, 0, 0.619);
-}
-button{
-  font-family: "Krona One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  border: none;
-  grid-column: 5;
-}
-
-nav {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  padding: 1rem;
-  backdrop-filter: blur(15px);
-
-}
-
-.nav-links {
-  grid-column: 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5rem;
-
-}
-.menuburger{
-  display: none;
-}
-
-.nav-links ul{
-  grid-column: 1;
-  display: flex;
-  list-style: none;
-  gap: 100px;
-  margin-top: 0.75rem;
-  cursor: pointer;
-}
-.nav-links li:hover{
-  color: #3CFC46;
-  text-decoration: underline;
-  text-decoration-color: #3CFC46;
-}
-
-.arena-logo {
-  font-family: "BBH Sans Bartle", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  margin-left: 1rem;
-}
-
-.arena-logo span {
-  color: #3CFC46;
-}
-.small-line{
-  margin: 5rem;
-  margin-bottom: 8rem;
-  height: 10px;
-  border: none;
-  background: #00ff66;
-  width: 300px;
-  margin-left: 35rem;
-  border-radius: 50px;
-}
-
-
-.nav-connection {
-  grid-column: 2;
-  width: 8rem;
-  height: 3rem;
-  border-radius: 50px;
-  background: #3CFC46;
-  font-family: "Krona One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  border: none;
-  grid-column: 5;
-  cursor: pointer;
-}
-
-.nav-line {
-  height: 0.5rem;
-  width: 100%;
-  background: #3CFC46;
-  border: none;
-}
-button{
-  cursor: pointer;
-}
-
