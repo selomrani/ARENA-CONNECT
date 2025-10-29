@@ -99,6 +99,11 @@ line-height: 30px;
 color: #FFFFFF;
 text-decoration-line: none;
 }
+a {
+  text-decoration: none;
+  color: #bfbfbf;
+  transition: color 0.3s ease;
+}
 
 /* .Actualite-section-1 {
     background-color: #042F06;
